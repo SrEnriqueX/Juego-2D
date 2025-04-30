@@ -442,7 +442,7 @@ GameObject:
   - component: {fileID: 454792953}
   m_Layer: 0
   m_Name: jhon
-  m_TagString: Untagged
+  m_TagString: InitialPosition
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -490,7 +490,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 591526336708533081, guid: 63781e0ecee39c543a8ed0e12167fcb6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -597,6 +597,10 @@ MonoBehaviour:
   Speed: 1
   JumForce: 120
   soundJump: {fileID: 8300000, guid: f01beaace50aca442bdcd5526387811c, type: 3}
+  deathY: -2.5
+  initialPosition: {x: 0, y: 0, z: 0}
+  damageColor: {r: 1, g: 0, b: 0, a: 1}
+  flashDuration: 0.3
 --- !u!95 &454792952
 Animator:
   serializedVersion: 7
@@ -1945,7 +1949,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: -8101091865079590712, guid: 14e161038bb8f1d439f667fffb74b4bd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2505,7 +2509,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 8469475209945955884, guid: 9e42fa4092c87d5449318b6ae581346d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2592,7 +2596,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: -8101091865079590712, guid: 14e161038bb8f1d439f667fffb74b4bd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

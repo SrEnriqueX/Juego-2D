@@ -3,10 +3,6 @@ using UnityEngine;
 public class CameraScript : MonoBehaviour
 {
     public GameObject John;
-    void Start()
-    {
-        
-    }
 
     void Update()
     {

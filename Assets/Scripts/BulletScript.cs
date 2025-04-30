@@ -9,13 +9,13 @@ public class BulletScript : MonoBehaviour
     private Rigidbody2D Rigidbody2D;
     void Start()
     {
-        Rigidbody2D=GetComponent<Rigidbody2D>();
+        Rigidbody2D = GetComponent<Rigidbody2D>();
         Camera.main.GetComponent<AudioSource>().PlayOneShot(Sound);
     }
 
     void Update()
     {
-      
+
     }
     private void FixedUpdate()
     {

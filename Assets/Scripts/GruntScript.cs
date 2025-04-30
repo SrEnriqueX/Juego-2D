@@ -5,19 +5,19 @@ public class GruntScript : MonoBehaviour
     public GameObject bulletPrefab;
     public GameObject John;
     private float LastShoot;
-    private int Health=3;
+    private int Health = 3;
 
     private void Update()
     {
-        if(John == null) return;
+        if (John == null) return;
         //logica para que el enemigo(Grunt) lo mire al personaje john
         Vector3 direction = John.transform.position - transform.position;
-        if(direction.x>=0.0f) transform.localScale=new Vector3(1.0f,1.0f,1.0f);
-        else transform.localScale = new Vector3(-1.0f,1.0f,1.0f);
+        if (direction.x >= 0.0f) transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
+        else transform.localScale = new Vector3(-1.0f, 1.0f, 1.0f);
 
 
         float distance = Mathf.Abs(John.transform.position.x - transform.position.x);
-        if(distance < 1.0f && Time.time > LastShoot + 0.25f)
+        if (distance < 1.0f && Time.time > LastShoot + 0.25f)
         {
             Shoot();
             LastShoot = Time.time;
@@ -34,8 +34,11 @@ public class GruntScript : MonoBehaviour
     }
     public void Hit()
     {
-        Health = Health - 1;
-        if (Health == 0) Destroy(gameObject);
+        Health--;
+        if (Health <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 
 }
