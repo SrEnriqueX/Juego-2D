@@ -106,10 +106,10 @@ TextureImporter:
       name: grunt_crouch_shoot_front_0
       rect:
         serializedVersion: 2
-        x: 4
+        x: 5
         y: 0
-        width: 21
-        height: 17
+        width: 19
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,10 +128,10 @@ TextureImporter:
       name: grunt_crouch_shoot_front_1
       rect:
         serializedVersion: 2
-        x: 30
+        x: 31
         y: 0
-        width: 20
-        height: 17
+        width: 19
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,7 +150,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: e211367c2b705d447804d1892384529f
     internalID: 0
     vertices: []
     indices: 

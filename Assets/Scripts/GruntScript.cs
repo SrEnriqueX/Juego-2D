@@ -1,28 +1,36 @@
+using System.Collections;
 using UnityEngine;
 
 public class GruntScript : MonoBehaviour
 {
-    // Configuración pública
+    
     public GameObject bulletPrefab;
     public GameObject John;
+    public Animator animator;
 
-    // Parámetros ajustables (podrían hacerse públicos)
     private float shootCooldown = 0.25f;
     private float shootRange = 1.0f;
     private int maxHealth = 3;
+    public float hurtAnimationDuration = 0.5f;
 
-    // Estado interno
+
     private float lastShootTime;
     private int currentHealth;
+    private bool isHurting = false;
+    private SpriteRenderer spriteRenderer;
+
+
 
     void Start()
     {
-        currentHealth = maxHealth; // Inicialización explícita
+        currentHealth = maxHealth;
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        if (animator == null) animator = GetComponent<Animator>();
     }
 
     void Update()
     {
-        if (John == null) return;
+        if (John == null || isHurting) return;
 
         UpdateFacingDirection();
         TryShoot();
@@ -32,9 +40,7 @@ public class GruntScript : MonoBehaviour
     {
         Vector3 direction = John.transform.position - transform.position;
         transform.localScale = new Vector3(
-            direction.x >= 0 ? 1f : -1f,
-            1f,
-            1f
+            direction.x >= 0 ? 1f : -1f,1f,1f
         );
     }
 
@@ -62,12 +68,39 @@ public class GruntScript : MonoBehaviour
 
     public void Hit()
     {
+        if (isHurting) return;
+
         currentHealth--;
+        StartCoroutine(PlayHurtAnimation());
 
         if (currentHealth <= 0)
         {
             Destroy(gameObject);
         }
     }
+    private IEnumerator PlayHurtAnimation()
+    {
+        isHurting = true;
 
+     
+        animator.Play("Hurt", 0, 0f);
+
+     
+        Color originalColor = spriteRenderer.color;
+        spriteRenderer.color = Color.red;
+
+     
+        float originalSpeed = shootCooldown;
+        shootCooldown = Mathf.Infinity; 
+
+        
+        yield return new WaitForSeconds(hurtAnimationDuration);
+     
+        spriteRenderer.color = originalColor;
+        shootCooldown = originalSpeed;
+        isHurting = false;
+
+        animator.Play("GruntAnimator", 0, 0f);
+    }
 }
+
