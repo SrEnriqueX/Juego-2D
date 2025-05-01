@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      grunt_shoot_0: 5094198151577863825
+      grunt_shoot_1: 7206975873342976226
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

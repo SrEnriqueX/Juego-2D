@@ -106,10 +106,10 @@ TextureImporter:
       name: john_dead_0
       rect:
         serializedVersion: 2
-        x: 1
+        x: 2
         y: 0
-        width: 23
-        height: 13
+        width: 21
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,9 +128,9 @@ TextureImporter:
       name: john_dead_1
       rect:
         serializedVersion: 2
-        x: 27
+        x: 28
         y: 0
-        width: 23
+        width: 21
         height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -150,7 +150,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 88649260a1681ee40a09487eaa5eebd2
     internalID: 0
     vertices: []
     indices: 
@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      john_dead_0: 2799205786595837733
+      john_dead_1: -8653400457863613279
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

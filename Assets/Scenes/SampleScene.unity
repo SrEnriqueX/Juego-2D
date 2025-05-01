@@ -599,8 +599,6 @@ MonoBehaviour:
   soundJump: {fileID: 8300000, guid: f01beaace50aca442bdcd5526387811c, type: 3}
   deathY: -2.5
   initialPosition: {x: 0, y: 0, z: 0}
-  damageColor: {r: 1, g: 0, b: 0, a: 1}
-  flashDuration: 0.3
 --- !u!95 &454792952
 Animator:
   serializedVersion: 7
@@ -617,7 +615,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
+  m_AnimatePhysics: 1
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1

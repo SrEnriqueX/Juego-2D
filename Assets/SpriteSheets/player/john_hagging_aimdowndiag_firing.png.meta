@@ -108,10 +108,10 @@ TextureImporter:
         serializedVersion: 2
         x: 3
         y: 0
-        width: 19
+        width: 18
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -130,10 +130,10 @@ TextureImporter:
         serializedVersion: 2
         x: 28
         y: 0
-        width: 19
+        width: 18
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -150,7 +150,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 28a7c86203f945a43823bcb11f1e44ee
     internalID: 0
     vertices: []
     indices: 
@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      john_hagging_aimdowndiag_firing_0: 972684946506582038
+      john_hagging_aimdowndiag_firing_1: 5522051757520525794
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

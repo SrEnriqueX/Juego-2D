@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      grunt_crouch_shoot_front_0: 2504447533976896548
+      grunt_crouch_shoot_front_1: -5842375718831538636
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

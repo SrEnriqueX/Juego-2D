@@ -359,7 +359,17 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      grunt_run_0: 8868147658173238643
+      grunt_run_1: 5923453354812330709
+      grunt_run_2: -3180868792604540423
+      grunt_run_3: 7388231939603506572
+      grunt_run_4: 2101693359743476388
+      grunt_run_5: 5281249209622636360
+      grunt_run_6: -6515403411052453266
+      grunt_run_7: -8453960477628149663
+      grunt_run_8: -7494662643474030000
+      grunt_run_9: -3130280782368942288
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
